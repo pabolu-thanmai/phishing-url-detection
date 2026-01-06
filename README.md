@@ -89,6 +89,8 @@ Output:
 
 Prediction: Phishing
 
+---
+
 ##Limitations
 
 This is a URL-only detection system
@@ -97,10 +99,12 @@ It does not use domain reputation, DNS, or website content
 
 Intended as a first-layer phishing filter, not a standalone security solution
 
+---
+
 ##Future Improvements
 
 Integrate domain reputation or blacklist-based signals
 
 Combine with content-based or browser-side detection
 
-
+---
