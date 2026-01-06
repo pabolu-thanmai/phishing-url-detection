@@ -81,7 +81,7 @@ phishing-url-detection/
 ### 1. Train the model
 python src/train.py
 
-2. Predict from command line
+###2. Predict from command line
 python src/predict.py "http://secure-login-update.example.com"
 
 
@@ -89,7 +89,7 @@ Output:
 
 Prediction: Phishing
 
-Limitations
+##Limitations
 
 This is a URL-only detection system
 
@@ -97,7 +97,7 @@ It does not use domain reputation, DNS, or website content
 
 Intended as a first-layer phishing filter, not a standalone security solution
 
-Future Improvements
+##Future Improvements
 
 Integrate domain reputation or blacklist-based signals
 
