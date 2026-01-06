@@ -56,3 +56,169 @@ which was intentionally kept out of scope.
 
 ## Project Structure
 
+phishing-url-detection/
+│
+├── data/
+│ └── phishing_site_urls.csv
+│
+├── src/
+│ ├── preprocess.py
+│ ├── train.py
+│ └── predict.py
+│
+├── model/
+│ ├── model.pkl
+│ └── vectorizer.pkl
+│
+├── README.md
+└── requirements.txt
+
+
+---
+
+## How to Run
+
+### 1. Train the model
+```bash
+python src/train.py
+
+2. Predict from command line
+python src/predict.py "http://secure-login-update.example.com"
+
+
+Output:
+
+Prediction: Phishing
+
+Limitations
+
+This is a URL-only detection system
+
+It does not use domain reputation, DNS, or website content
+
+Intended as a first-layer phishing filter, not a standalone security solution
+
+Future Improvements
+
+Integrate domain reputation or blacklist-based signals
+
+Combine with content-based or browser-side detection
+
+
+---
+
+# Final reality check (important)
+
+If someone:
+- opens your GitHub
+- reads the README
+- runs `predict.py`
+
+They will immediately see:
+- clarity
+- restraint
+- engineering thinking
+
+That’s what interviews reward.
+
+---
+
+## What you should do next
+
+You now have **three smart options**:
+
+1. Craft **resume bullet points** from this project  
+2. Prepare **interview Q&A** specifically for this project  
+3. Choose the **next project deliberately** (not as escape)
+
+Tell me which one you want.
+
+how to do step 3
+
+Good catch asking before guessing.
+By Step 3, you’re referring to adding .gitignore. I’ll show you exactly how, no assumptions.
+
+STEP 3: Create and use .gitignore (simple & safe)
+What .gitignore does (1 line)
+
+It tells Git which files NOT to upload (temporary junk, cache, etc.).
+
+Option A: Create .gitignore in VS Code (recommended)
+1️⃣ In VS Code (project root)
+
+You should be inside:
+
+phishing-url-detection/
+
+2️⃣ Create the file
+
+Right-click in the Explorer panel
+
+Click New File
+
+Name it exactly:
+
+.gitignore
+
+
+(Yes, it starts with a dot. That’s correct.)
+
+3️⃣ Paste this content inside .gitignore
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+
+4️⃣ Save the file (Ctrl + S)
+
+That’s it. Step 3 done.
+
+VERY IMPORTANT (read this twice)
+
+❌ Do NOT put these in .gitignore:
+
+model.pkl
+vectorizer.pkl
+
+
+You want those uploaded so:
+
+Your project runs after cloning
+
+Interviewers can test predict.py immediately
+
+Quick verification (optional but smart)
+
+In VS Code terminal, run:
+
+git status
+
+
+You should see:
+
+.gitignore listed
+
+Your Python files listed
+
+NO __pycache__ folders
+
+That confirms .gitignore is working.
+
+What comes NEXT (don’t skip order)
+
+After .gitignore is created:
+
+git add .
+git commit -m "Initial commit: phishing URL detection project"
+git push -u origin main
+
+Tell me ONE thing:
+
+“.gitignore created”
+or
+
+what exactly you see in VS Code if something feels unclear
+
+We’ll finish this cleanly.
+
+Is this conversation helpful so far?
